@@ -6,6 +6,7 @@
 
 #Tasks generated
 + gulp eslint
++ gulp eslint:watch
 
 #Contributing
 + In the templates directory you'll see all of the task code about eslint
