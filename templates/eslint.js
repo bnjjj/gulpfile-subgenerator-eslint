@@ -9,6 +9,7 @@ gulp.task('eslint', function () {
 });
 
 gulp.task('eslint:watch', function () {
+  gulp.start('eslint');
   gulp.watch([<% var tab = srcLint.split(','); for(var i = 0; i < tab.length; i++) { %>'<%=tab[i].replace(' ', '')%>'<% if (i !== tab.length - 1) {%>,<% } %>
     <%}%>], ['eslint']);
 });
